@@ -1,0 +1,367 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-white-text-color: #ffffff;
+  --secondary-white-text-color: rgba (255, 255, 255, 0.6);
+  --primary-light-color: #ffffff;
+  --third-text-color: #f5f4fa;
+  --primary-black-color: #2f303a;
+  --accent-second-color: #188ce8;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-light-color);
+  font-family: Roboto, sans-serif;
+}
+
+.link {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Logo */
+
+.logo {
+  color: var(--primary-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-first-header {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.logo-second-header {
+  color: var(--primary-text-color);
+}
+
+.logo-third-footer {
+  color: var(--primary-white-text-color);
+  background-color: var(--primary-black-color);
+}
+
+/* Site nav */
+.nav-link {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.logo-first-header:hover,
+.logo-first-header:focus,
+.logo-second-header:hover,
+.logo-second-header:focus,
+.logo-third-footer:hover,
+.logo-third-footer:focus,
+.contacts-link-down:hover,
+.contacts-link-down:focus,
+.contacts-link-up:hover,
+.contacts-link-up:focus,
+.current,
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+/* Auth-nav*/
+
+.contacts-link-up {
+  color: var(--secondary-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+/* Hero */
+
+.section-hero {
+  color: var(--primary-white-text-color);
+  background-color: var(--primary-black-color);
+}
+
+.hero-title {
+  color: var(--primary-white-text-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-hero-title {
+  color: var(--primary-white-text-color);
+  background-color: var(--primary-black-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Button */
+
+.button {
+  color: var(--primary-white-text-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: 0;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-second-color);
+}
+
+.button,
+.portfolio-btn-pointer,
+.current-btn,
+.button-secondary-pointer {
+  cursor: pointer;
+}
+
+.button-secondary link:hover,
+.button-secondary link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-text-color);
+}
+
+.button-secondary-pointer {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-btn {
+  background-color: var(--third-text-color);
+  color: var(--primary-text-color);
+}
+
+.portfolio-button-pointer.current-btn {
+  border: 0;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+}
+
+.current-btn,
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-text-color);
+}
+
+/* Peculiarities */
+
+.benefits-title {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.benefits-description {
+  color: var(--secondary-text-color);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* What are we doing */
+
+.section-title {
+  color: var(--primary-text-color);
+  background-color: var(--third-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+/* Our team */
+.section-our-team {
+  background-color: var(--third-text-color);
+}
+
+.our-team-section-title {
+  color: var(--primary-text-color);
+  background-color: var(--third-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.our-team .list {
+  background-color: var(--third-text-color);
+}
+
+.our-team-item {
+  background-color: var(--primary-light-color);
+}
+
+.our-team-item-title {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team-item-description {
+  color: var(--secondary-text-color);
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* Filtre on the pages */
+
+.item-title {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.item-description {
+  color: var(--secondary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-black-color);
+}
+
+.footer-title {
+  background-color: var(--primary-black-color);
+}
+
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-first-footer {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.logo-second-footer {
+  color: var(--primary-white-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.contacts-adress {
+  color: var(--primary-white-text-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.contacts-link-down {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
