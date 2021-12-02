@@ -9,8 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./css/styles.css"
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
     <!-- Шапка сайта-->
@@ -19,7 +24,7 @@
       <a class="logo-first-header" href="" lang="en"
         >Web<span class="logo-second-header">Studio</span></a
       >
-      <nav>
+      <nav class="container main-nav">
         <!--Навигация на другие страницы-->
         <ul class="site-nav list">
           <li><a class="nav-link current" href="./index.html">Студия</a></li>
@@ -40,6 +45,7 @@
       <section class="section">
         <h1 class="section-hero-title"></h1>
         <!--Фильтр страницы-->
+
         <ul class="list">
           <li>
             <button type="button" class="portfolio-button-pointer current-btn">
@@ -68,66 +74,82 @@
           </li>
         </ul>
         <!--Фильтр Портфолио-->
-        <h2 class="section-title"></h2>
-        <ul class="Портфолио-list list">
-          <li>
-            <img src="./images/img5.jpg" alt="Веб-сайт" width="370" />
-            <h3 class="item-title">Технокряк</h3>
-            <p class="item-description">Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/img6.jpg"
-              alt="Постер с фото баскетбол"
-              width="370"
-            />
-            <h3 class="item-title">Постер New Orlean vs Golden Star</h3>
-            <p class="item-description">Дизайн</p>
-          </li>
-          <li>
-            <img src="./images/img7.jpg" alt="Ресторан - логотип" width="370" />
-            <h3 class="item-title">Ресторан Seafood</h3>
-            <p class="item-description">Приложение</p>
-          </li>
-          <li>
-            <img src="./images/img8.jpg" alt="Основной проект" width="370" />
-            <h3 class="item-title">Проект Prime</h3>
-            <p class="item-description">Маркетинг</p>
-          </li>
-          <li>
-            <img src="./images/img9.jpg" alt="Проект - Боксы" width="370" />
-            <h3 class="item-title">Проект Boxes</h3>
-            <p class="item-description">Приложение</p>
-          </li>
-          <li>
-            <img src="./images/img10.jpg" alt="Вдохновение" width="370" />
-            <h3 class="item-title">Inspiration has no Borders</h3>
-            <p class="item-description">Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/img11.jpg"
-              alt="Ограниченное издание"
-              width="370"
-            />
-            <h3 class="item-title">Издание Limited Edition</h3>
-            <p class="item-description">Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/img12.jpg"
-              alt="Программа обучения"
-              width="370"
-            />
-            <h3 class="item-title">Проект LAB</h3>
-            <p class="item-description">Маркетинг</p>
-          </li>
-          <li>
-            <img src="./images/img13.jpg" alt="Растущий бизнес" width="370" />
-            <h3 class="item-title">Growing Business</h3>
-            <p class="item-description">Приложение</p>
-          </li>
-        </ul>
+        <div class="test-container">
+          <div class="flex-container">
+            <h2 class="section-title"></h2>
+            <ul class="Портфолио-list list">
+              <li class="flex-element">
+                <img src="./images/img5.jpg" alt="Веб-сайт" width="370" />
+                <h3 class="item-title">Технокряк</h3>
+                <p class="item-description">Веб-сайт</p>
+              </li>
+              <li class="flex-element">
+                <img
+                  src="./images/img6.jpg"
+                  alt="Постер с фото баскетбол"
+                  width="370"
+                />
+                <h3 class="item-title">Постер New Orlean vs Golden Star</h3>
+                <p class="item-description">Дизайн</p>
+              </li>
+              <li class="flex-element">
+                <img
+                  src="./images/img7.jpg"
+                  alt="Ресторан - логотип"
+                  width="370"
+                />
+                <h3 class="item-title">Ресторан Seafood</h3>
+                <p class="item-description">Приложение</p>
+              </li>
+              <li class="flex-element">
+                <img
+                  src="./images/img8.jpg"
+                  alt="Основной проект"
+                  width="370"
+                />
+                <h3 class="item-title">Проект Prime</h3>
+                <p class="item-description">Маркетинг</p>
+              </li>
+              <li class="flex-element">
+                <img src="./images/img9.jpg" alt="Проект - Боксы" width="370" />
+                <h3 class="item-title">Проект Boxes</h3>
+                <p class="item-description">Приложение</p>
+              </li>
+              <li class="flex-element">
+                <img src="./images/img10.jpg" alt="Вдохновение" width="370" />
+                <h3 class="item-title">Inspiration has no Borders</h3>
+                <p class="item-description">Веб-сайт</p>
+              </li>
+              <li class="flex-element">
+                <img
+                  src="./images/img11.jpg"
+                  alt="Ограниченное издание"
+                  width="370"
+                />
+                <h3 class="item-title">Издание Limited Edition</h3>
+                <p class="item-description">Дизайн</p>
+              </li>
+              <li class="flex-element">
+                <img
+                  src="./images/img12.jpg"
+                  alt="Программа обучения"
+                  width="370"
+                />
+                <h3 class="item-title">Проект LAB</h3>
+                <p class="item-description">Маркетинг</p>
+              </li>
+              <li class="flex-element">
+                <img
+                  src="./images/img13.jpg"
+                  alt="Растущий бизнес"
+                  width="370"
+                />
+                <h3 class="item-title">Growing Business</h3>
+                <p class="item-description">Приложение</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
     <!--Подвал страницы-->

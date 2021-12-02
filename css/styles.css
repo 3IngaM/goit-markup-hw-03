@@ -30,10 +30,16 @@ p {
   margin: 0;
 }
 
+.box {
+  width: 500px;
+  height: 100px;
+  margin-right: auto;
+}
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-light-color);
   font-family: Roboto, sans-serif;
+  margin: 0;
 }
 
 .link {
@@ -82,6 +88,11 @@ img {
 }
 
 /* Site nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav-link {
   color: var(--primary-text-color);
   font-style: normal;
@@ -307,6 +318,28 @@ img {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
+}
+
+.test-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-element {
+  width: 380px;
+  background: url(portfolio1);
+}
+
+.flex-element:nth-child(3) {
+  margin-right: 0;
 }
 
 /* Footer */
