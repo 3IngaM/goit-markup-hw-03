@@ -44,6 +44,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-light-color);
@@ -63,38 +64,17 @@ body {
   padding: 0;
   margin: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-ul {
-  list-style-type: disc;
-}
-::marker {
-  unicode-bidi: isolate;
-  font-variant-numeric: tabular-nums;
-  text-transform: none;
-  text-indent: 0px !important;
-  text-align: start !important;
-  text-align-last: start !important;
-}
+
 /* Logo */
 .header-row {
   display: flex;
+  border-collapse: collapse;
 }
 .logo {
   color: var(--primary-text-color);
@@ -130,11 +110,13 @@ ul {
   align-items: flex-start;
   padding: 0px;
 }
+
 .header-row .list a {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .header-row .list li {
   margin-left: 25px;
   margin-right: 25px;
@@ -143,12 +125,15 @@ ul {
 .auth-nav li:last-child {
   margin-right: 0px;
 }
+
 .header-row nav {
   margin-right: auto;
 }
+
 .auth-nav {
   justify-self: self-end;
 }
+
 .logo-first-header {
   display: inline-block;
   padding-top: 24px;
@@ -206,19 +191,23 @@ ul {
   color: var(--primary-white-text-color);
   background-color: var(--primary-black-color);
 }
+
 .section-hero .container {
   height: 100%;
 }
+
 .section-hero_flex {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
+
 .section-hero_inner {
   width: 696px;
   text-align: center;
 }
+
 .section-hero_inner .button {
   margin-top: 30px;
 }
@@ -293,6 +282,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .button-secondary-pointer:hover,
 .button-secondary-pointer:focus,
 .button-secondary-pointer:active,
@@ -309,6 +299,7 @@ ul {
 }
 
 /* Peculiarities */
+
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -355,6 +346,7 @@ ul {
   width: 33.33336%;
   margin-right: 30px;
 }
+
 .work-type .list li:last-child {
   margin-right: 0px;
 }
@@ -372,6 +364,7 @@ ul {
 .our-team {
   padding-top: 94px;
   padding-bottom: 94px;
+
   background-color: var(--third-text-color);
 }
 .our-team-section-title {
@@ -383,6 +376,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 .our-team .list {
   display: flex;
@@ -407,6 +401,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .item-caption {
   padding: 30px;
 }
@@ -421,10 +416,15 @@ ul {
 }
 
 /* Filtre on the pages */
+.portfolio-section {
+  padding-bottom: 79px;
+}
+
 .portfolio-section .list {
   padding: 50px 0;
   text-align: center;
 }
+
 .portfolio-section .list li {
   display: inline-block;
   margin-left: 2px;
@@ -437,7 +437,22 @@ ul {
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 -15px;
+}
+
+.flex-element {
+  display: block;
+  width: 370px;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.flex-element-inner {
+  border: 1px solid #eee;
+}
+
+.item-description-wrp {
+  padding: 20px 24px;
 }
 
 .item-title {
@@ -458,17 +473,8 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.flex-element {
-  width: 33.33336%;
-  /*margin-right: 25px;
-   margin-bottom: 30px;*/
-  background: url(portfolio1);
-}
-.flex-element:nth-child(3n) {
-  margin-right: 0px;
-}
-
 /* Footer */
+
 .footer {
   padding: 60px 0;
   background-color: var(--primary-black-color);
