@@ -72,14 +72,22 @@ img {
 }
 
 /* Logo */
-
+.header {
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+  border-bottom-color: rgba(236, 236, 236, 1);
+  width: 1600px;
+  height: 80px;
+  padding-left: auto;
+  padding-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header .container {
+  height: 100%;
+}
 .header-row {
   display: flex;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(236, 236, 236, 1);
-  border-color: var(--accent-color);
-  height: 80px;
 }
 
 .logo {
@@ -343,6 +351,7 @@ img {
 /* What are we doing */
 .work-type {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .work-type .list {
   display: flex;
@@ -424,7 +433,7 @@ img {
 /* Filtre on the pages */
 .portfolio-section {
   padding-bottom: 94px;
-  padding-top: 143px;
+  padding-top: 94px;
 }
 
 .portfolio-section .list {
