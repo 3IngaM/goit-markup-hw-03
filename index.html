@@ -20,29 +20,35 @@
   <body class="page">
     <!-- Шапка сайта-->
     <header>
-      <div class="container">
-        <div class="header-row">
-          <a class="logo-first-header" href="" lang="en"
-            >Web<span class="logo-second-header">Studio</span></a
-          >
-          <nav>
-            <!--Навигация на другие страницы-->
-            <ul class="site-nav list">
-              <li><a class="nav-link current" href="">Студия</a></li>
-              <li><a class="nav-link" href="./porfolio.html">Портфолио</a></li>
-              <li><a class="nav-link" href="">Контакты</a></li>
+      <div class="header">
+        <div class="container">
+          <div class="header-row">
+            <a class="logo-first-header" href="" lang="en"
+              >Web<span class="logo-second-header">Studio</span></a
+            >
+            <nav>
+              <!--Навигация на другие страницы-->
+              <ul class="site-nav list">
+                <li><a class="nav-link current" href="">Студия</a></li>
+                <li>
+                  <a class="nav-link" href="./porfolio.html">Портфолио</a>
+                </li>
+                <li><a class="nav-link contacts-item" href="">Контакты</a></li>
+              </ul>
+            </nav>
+            <ul class="auth-nav list">
+              <li>
+                <a class="contacts-link-up" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="contacts-link-up-item" href="tel:"
+                  >+38 096 111 11 11</a
+                >
+              </li>
             </ul>
-          </nav>
-          <ul class="auth-nav list">
-            <li>
-              <a class="contacts-link-up" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contacts-link-up" href="tel:">+38 096 111 11 11</a>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -51,9 +57,7 @@
       <!--Герой-->
       <section class="section-hero">
         <div class="container">
-          <div class="section-hero_flex">
-            <div class="section-hero_inner">
-              <h1 class="section-hero-title">
+                       <h1 class="section-hero-title">
                 Эффективные решения для вашего бизнеса
               </h1>
               <button type="button" class="button link">Заказать услугу</button>
@@ -179,7 +183,7 @@
         <a class="logo-first-footer link" href="" lang="en"
           >Web<span class="logo-second-footer">Studio</span></a
         >
-        <section class="footer-title">
+        <div class="footer-adress">
           <ul class="list">
             <li>
               <address class="contacts-adress">
@@ -197,7 +201,7 @@
               >
             </li>
           </ul>
-        </section>
+        </div>
       </div>
     </footer>
   </body>
